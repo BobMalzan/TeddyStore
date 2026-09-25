@@ -119,6 +119,45 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &32915015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 32915016}
+  m_Layer: 0
+  m_Name: Staffed_Shelf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &32915016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32915015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 726360969}
+  - {fileID: 137634637}
+  - {fileID: 1663557656}
+  - {fileID: 1345578158}
+  - {fileID: 349789243}
+  - {fileID: 1488509765}
+  - {fileID: 1789604229}
+  - {fileID: 336200854}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137634633
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,9 +170,10 @@ GameObject:
   - component: {fileID: 137634636}
   - component: {fileID: 137634635}
   - component: {fileID: 137634634}
+  - component: {fileID: 137634638}
   m_Layer: 0
   m_Name: Tiny_Teddy
-  m_TagString: Untagged
+  m_TagString: ShopItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,13 +264,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137634633}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.3971479, z: 0, w: 0.91775465}
+  m_LocalRotation: {x: -0, y: -0.3971479, z: -0, w: 0.91775465}
   m_LocalPosition: {x: -3.66, y: 0.222, z: -2.578}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalScale: {x: 0.34999996, y: 0.35, z: 0.34999996}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: -46.8, z: 0}
+--- !u!114 &137634638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137634633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90a0ca1a080ec6459bbd59e1e80b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemInteractor
+  m_ItemNumber: 1
 --- !u!1 &336200850
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,9 +296,10 @@ GameObject:
   - component: {fileID: 336200853}
   - component: {fileID: 336200852}
   - component: {fileID: 336200851}
+  - component: {fileID: 336200855}
   m_Layer: 0
   m_Name: Monster_Teddy
-  m_TagString: Untagged
+  m_TagString: ShopItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,13 +390,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336200850}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.877, y: 2.213, z: -1.416}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.439, y: 2.226, z: -1.717}
   m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336200855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336200850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90a0ca1a080ec6459bbd59e1e80b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemInteractor
+  m_ItemNumber: 3
 --- !u!1 &349789239
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,9 +422,10 @@ GameObject:
   - component: {fileID: 349789242}
   - component: {fileID: 349789241}
   - component: {fileID: 349789240}
+  - component: {fileID: 349789244}
   m_Layer: 0
   m_Name: Buddy_Teddy
-  m_TagString: Untagged
+  m_TagString: ShopItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -448,13 +516,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349789239}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.30818686, z: 0, w: 0.9513259}
+  m_LocalRotation: {x: -0, y: 0.30818686, z: -0, w: 0.9513259}
   m_LocalPosition: {x: -3.851, y: 1.06, z: -2.392}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: 35.9, z: 0}
+--- !u!114 &349789244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349789239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90a0ca1a080ec6459bbd59e1e80b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemInteractor
+  m_ItemNumber: 2
 --- !u!1 &374232799
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726360968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.25392672, z: 0, w: 0.96722347}
+  m_LocalRotation: {x: -0, y: 0.25392672, z: -0, w: 0.96722347}
   m_LocalPosition: {x: 0.688, y: 0, z: -1.893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -736,7 +817,7 @@ Transform:
   - {fileID: 2022918385}
   - {fileID: 952317222}
   - {fileID: 979668993}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: 29.42, z: 0}
 --- !u!1 &819472608
 GameObject:
@@ -1101,9 +1182,10 @@ GameObject:
   - component: {fileID: 1345578157}
   - component: {fileID: 1345578156}
   - component: {fileID: 1345578155}
+  - component: {fileID: 1345578159}
   m_Layer: 0
   m_Name: Tiny_Teddy (2)
-  m_TagString: Untagged
+  m_TagString: ShopItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1194,13 +1276,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345578154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.46792975, z: 0, w: 0.8837657}
+  m_LocalRotation: {x: -0, y: -0.46792975, z: -0, w: 0.8837657}
   m_LocalPosition: {x: -2.963, y: 0.231, z: -1.507}
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: -55.8, z: 0}
+--- !u!114 &1345578159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345578154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90a0ca1a080ec6459bbd59e1e80b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemInteractor
+  m_ItemNumber: 1
 --- !u!1 &1488509761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,9 +1308,10 @@ GameObject:
   - component: {fileID: 1488509764}
   - component: {fileID: 1488509763}
   - component: {fileID: 1488509762}
+  - component: {fileID: 1488509766}
   m_Layer: 0
   m_Name: Buddy_Teddy (1)
-  m_TagString: Untagged
+  m_TagString: ShopItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1306,13 +1402,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488509761}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.278, y: 1.134, z: -1.913}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1488509766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488509761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90a0ca1a080ec6459bbd59e1e80b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemInteractor
+  m_ItemNumber: 2
 --- !u!1 &1663557652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,9 +1434,10 @@ GameObject:
   - component: {fileID: 1663557655}
   - component: {fileID: 1663557654}
   - component: {fileID: 1663557653}
+  - component: {fileID: 1663557657}
   m_Layer: 0
   m_Name: Tiny_Teddy (1)
-  m_TagString: Untagged
+  m_TagString: ShopItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1418,13 +1528,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663557652}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.3971479, z: 0, w: 0.91775465}
+  m_LocalRotation: {x: -0, y: -0.3971479, z: -0, w: 0.91775465}
   m_LocalPosition: {x: -3.19, y: 0.243, z: -2.095}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalScale: {x: 0.34999996, y: 0.35, z: 0.34999996}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: -46.8, z: 0}
+--- !u!114 &1663557657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663557652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90a0ca1a080ec6459bbd59e1e80b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemInteractor
+  m_ItemNumber: 1
 --- !u!1 &1789604225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,9 +1560,10 @@ GameObject:
   - component: {fileID: 1789604228}
   - component: {fileID: 1789604227}
   - component: {fileID: 1789604226}
+  - component: {fileID: 1789604230}
   m_Layer: 0
   m_Name: Buddy_Teddy (2)
-  m_TagString: Untagged
+  m_TagString: ShopItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1530,13 +1654,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789604225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.24479969, z: 0, w: 0.9695737}
+  m_LocalRotation: {x: -0, y: 0.24479969, z: -0, w: 0.9695737}
   m_LocalPosition: {x: -3.274, y: 1.111, z: -1.096}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 32915016}
   m_LocalEulerAnglesHint: {x: 0, y: 28.34, z: 0}
+--- !u!114 &1789604230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789604225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90a0ca1a080ec6459bbd59e1e80b814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemInteractor
+  m_ItemNumber: 2
 --- !u!1 &2022918384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,11 +1793,4 @@ SceneRoots:
   - {fileID: 447970736}
   - {fileID: 819472610}
   - {fileID: 374232803}
-  - {fileID: 137634637}
-  - {fileID: 1663557656}
-  - {fileID: 1345578158}
-  - {fileID: 726360969}
-  - {fileID: 349789243}
-  - {fileID: 1488509765}
-  - {fileID: 1789604229}
-  - {fileID: 336200854}
+  - {fileID: 32915016}
