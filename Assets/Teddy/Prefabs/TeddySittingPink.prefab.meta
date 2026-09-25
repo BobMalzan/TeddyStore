@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 435d8dfda0f52364ea98e743c190fbd2
+timeCreated: 1447764930
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50129
+  packageName: Cute Teddy Bear Toy
+  packageVersion: 1.0
+  assetPath: Assets/Teddy/Prefabs/TeddySittingPink.prefab
+  uploadId: 92489

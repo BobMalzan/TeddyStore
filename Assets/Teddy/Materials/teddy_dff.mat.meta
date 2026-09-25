@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b0ca2f22b51322d479bde51bb5054f07
+timeCreated: 1447486417
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50129
+  packageName: Cute Teddy Bear Toy
+  packageVersion: 1.0
+  assetPath: Assets/Teddy/Materials/teddy_dff.mat
+  uploadId: 92489

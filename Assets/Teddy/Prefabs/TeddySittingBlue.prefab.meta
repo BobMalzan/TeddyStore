@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a1979c5f22a6f7b41a41571c0fd334ed
+timeCreated: 1447764967
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50129
+  packageName: Cute Teddy Bear Toy
+  packageVersion: 1.0
+  assetPath: Assets/Teddy/Prefabs/TeddySittingBlue.prefab
+  uploadId: 92489
