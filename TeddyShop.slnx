@@ -37,6 +37,7 @@
   <Project Path="Unity.MemoryProfiler.Editor.MemoryProfilerModule.csproj" />
   <Project Path="Unity.Recorder.csproj" />
   <Project Path="Unity.InternalAPIEditorBridge.007.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.GraphAuthoring.Editor.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.Shared.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Editor.Shared.csproj" />
@@ -49,7 +50,6 @@
   <Project Path="Unity.InputSystem.TestFramework.csproj" />
   <Project Path="Unity.ShaderGraph.Utilities.csproj" />
   <Project Path="Unity.Recorder.Base.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.Profiling.Core.csproj" />
   <Project Path="Unity.EditorCoroutines.Editor.csproj" />
   <Project Path="Unity.SurfaceCache.Runtime.csproj" />
