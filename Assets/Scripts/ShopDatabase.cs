@@ -7,6 +7,9 @@ public class ShopDatabase : MonoBehaviour
     [SerializeField]
     private List<ShopItem> m_Data = new List<ShopItem>();
 
+    [SerializeField]
+    MeganAnimator m_MeganAnimator;
+
     [Serializable]
     public class ShopItem
     {
@@ -24,6 +27,8 @@ public class ShopDatabase : MonoBehaviour
     {
         TheShop = this;
         ShopData = m_Data;
+
+        m_MeganAnimator = FindAnyObjectByType<MeganAnimator>();
     }
 
     void Start()
@@ -43,6 +48,8 @@ public class ShopDatabase : MonoBehaviour
     public void AddToCart(uint itemNumber)
     {
         ShopItem item = FindItemById(itemNumber);
-        Debug.Log($"add {item.Name} (ID={item.ID}) to cart");
+        m_MeganAnimator.Twerk();
+
+        //Debug.Log($"add {item.Name} (ID={item.ID}) to cart");
     }
 }
